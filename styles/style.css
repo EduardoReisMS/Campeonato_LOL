@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+}
+
+nav {
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+nav > a {
+    border: 1px solid blue;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+p {
+    width: 50%;
+    margin: auto;
+}
+
+article {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#containertable {
+    overflow-x: auto;
+}
+
+table {
+    margin: auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    width: 100px;
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background:lightgray;
+}
+
+#setasrodadas {
+    width: 400px;
+    margin: auto; /* Centraliza a seção no meio do site */
+    display: flex;
+    justify-content: space-between; /* Distribui igualmente o espaço entre as imagens */
+}
+
+#setasrodadas > p {
+    text-align: center;
+}
+
+#rodadas {
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 500px) {
+    #setasrodadas {
+        width: 73%;
+    }
+}
