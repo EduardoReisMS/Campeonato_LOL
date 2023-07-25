@@ -8,11 +8,11 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    margin: auto;
 }
 
 nav {
-    margin: 0 auto;
+    margin: auto;
+    width: 80%;
     text-align: center;
     border: 1px solid black;
     padding: 10px;
@@ -35,18 +35,14 @@ p {
     margin: auto;
 }
 
-article {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
 #containertable {
     overflow-x: auto;
+    /* Em telas menores, faz com que somente a tabela seja possível arrastar para os lados sem bagunçar a responsividade do site. */
 }
 
 table {
     margin: auto;
-    border-collapse: collapse;
+    border-collapse: collapse; /* Por padrão as células da tabela não ficam coladas, essa linha junta todas as células */
 }
 
 th, td {
@@ -56,8 +52,30 @@ th, td {
     text-align: center;
 }
 
-tr:nth-child(even) {
+.proxfase, .repescagem, .eliminados {
+    font-weight: bolder;
+}
+
+.proxfase {
+    color: rgba(0, 128, 0, 0.644);
+}
+
+.repescagem {
+    color: rgba(255, 255, 0, 0.644);
+}
+
+.eliminados {
+    color: rgba(255, 0, 0, 0.644);
+}
+
+/* tr:nth-child(even) {
     background:lightgray;
+    Cor sim, cornão, cor sim, cornão...
+} */
+
+.descricaocampeonato, #descricaorodadas {
+    text-align: justify;
+    margin-bottom: 30px;
 }
 
 #setasrodadas {
@@ -69,15 +87,18 @@ tr:nth-child(even) {
 
 #setasrodadas > p {
     text-align: center;
+    /* centraliza o nome "Rodadas" no meio das setas */
 }
 
 #rodadas {
     display: flex;
     justify-content: center;
+    /* centraliza o iframe */
 }
 
 @media screen and (max-width: 500px) {
     #setasrodadas {
         width: 73%;
+        /* As setas estavam bagunçando a responsividade do site */
     }
 }
