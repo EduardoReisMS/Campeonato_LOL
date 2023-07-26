@@ -5,6 +5,10 @@
     padding: 0px;
 }
 
+h2 {
+    padding-bottom: 20px;
+}
+
 p {
     text-align: justify;
 }
@@ -18,6 +22,8 @@ img {
 }
 
 hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
     width: 100%;
 }
 
