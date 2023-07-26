@@ -4,6 +4,7 @@
     margin: 0px;
     padding: 0px;
     text-decoration: none;
+    list-style: none;
 }
 
 body {
@@ -41,6 +42,7 @@ p {
 }
 
 table {
+    background-color: cadetblue;
     margin: auto;
     border-collapse: collapse; /* Por padrão as células da tabela não ficam coladas, essa linha junta todas as células */
 }
@@ -50,6 +52,10 @@ th, td {
     border: 1px solid black;
     padding: 5px;
     text-align: center;
+}
+
+img:hover {
+    cursor: pointer;
 }
 
 .proxfase, .repescagem, .eliminados {
@@ -96,9 +102,17 @@ th, td {
     /* centraliza o iframe */
 }
 
+ul {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    columns: 3;
+}
+
 @media screen and (max-width: 500px) {
     #setasrodadas {
         width: 73%;
         /* As setas estavam bagunçando a responsividade do site */
+        margin-bottom: 30px;
     }
 }

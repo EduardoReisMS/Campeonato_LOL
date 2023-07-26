@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 1em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#explicacao {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container {
+    width: 150px;
+    margin:auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
+    flex-wrap: wrap;
+}
+
+.dias {
+    margin-bottom: 20px;
+}
+
+.win, .pontoswin {
+    color: green;
+}
+
+.loss, .pontosloss {
+    color: red;
+}
