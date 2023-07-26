@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+p {
+    text-align: justify;
+}
+
+aside {
+    margin-left: 30px;
+}
+
+img {
+    width: 240px;
+}
+
+hr {
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+}
+
+.nometime {
+    padding-bottom: 10px;
+}
+
+.historiatime {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.historiajogador {
+    width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nomejogador {
+    padding-bottom: 10px;
+}
+
+.descricao {
+    width: 300px;
+}
